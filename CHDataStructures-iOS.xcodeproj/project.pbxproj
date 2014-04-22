@@ -26,6 +26,10 @@
 		5DFBC2E910A754AD007BF56F /* libCHDataStructures.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4399A0D10A33C1200209906 /* libCHDataStructures.a */; };
 		5DFBC30C10A7564E007BF56F /* libCHDataStructures.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4399A0D10A33C1200209906 /* libCHDataStructures.a */; };
 		5DFBC3B010A765AE007BF56F /* CHDataStructures-iOS.octest in Resources */ = {isa = PBXBuildFile; fileRef = 5DFBC2D710A7540A007BF56F /* CHDataStructures-iOS.octest */; };
+		BD78B1F31905F22200D06060 /* CHSizeLimitedTreap.h in Headers */ = {isa = PBXBuildFile; fileRef = BD78B1F11905F22200D06060 /* CHSizeLimitedTreap.h */; };
+		BD78B1F41905F22200D06060 /* CHSizeLimitedTreap.m in Sources */ = {isa = PBXBuildFile; fileRef = BD78B1F21905F22200D06060 /* CHSizeLimitedTreap.m */; };
+		BD78B1F51905F22200D06060 /* CHSizeLimitedTreap.m in Sources */ = {isa = PBXBuildFile; fileRef = BD78B1F21905F22200D06060 /* CHSizeLimitedTreap.m */; };
+		BD78B1F61905F22200D06060 /* CHSizeLimitedTreap.m in Sources */ = {isa = PBXBuildFile; fileRef = BD78B1F21905F22200D06060 /* CHSizeLimitedTreap.m */; };
 		E4399A1F10A33C7A00209906 /* CHAbstractBinarySearchTree.m in Sources */ = {isa = PBXBuildFile; fileRef = E4ADBC990E88412C00B570BC /* CHAbstractBinarySearchTree.m */; };
 		E4399A2410A33C7A00209906 /* CHAbstractListCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = E48860B90EA66072000F132A /* CHAbstractListCollection.m */; };
 		E4399A3510A33C7A00209906 /* CHDoublyLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = E4ADBB1F0E88174200B570BC /* CHDoublyLinkedList.m */; };
@@ -119,6 +123,8 @@
 		5DFBC1F410A749CA007BF56F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5DFBC1F610A749CA007BF56F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5DFBC2D710A7540A007BF56F /* CHDataStructures-iOS.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CHDataStructures-iOS.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD78B1F11905F22200D06060 /* CHSizeLimitedTreap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHSizeLimitedTreap.h; path = source/CHSizeLimitedTreap.h; sourceTree = "<group>"; };
+		BD78B1F21905F22200D06060 /* CHSizeLimitedTreap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHSizeLimitedTreap.m; path = source/CHSizeLimitedTreap.m; sourceTree = "<group>"; };
 		E400CAAA0F7919B7003189D3 /* CHCircularBufferQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHCircularBufferQueue.h; path = source/CHCircularBufferQueue.h; sourceTree = "<group>"; };
 		E400CAAB0F7919B7003189D3 /* CHCircularBufferQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHCircularBufferQueue.m; path = source/CHCircularBufferQueue.m; sourceTree = "<group>"; };
 		E400CAC10F791A08003189D3 /* CHCircularBufferDeque.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHCircularBufferDeque.h; path = source/CHCircularBufferDeque.h; sourceTree = "<group>"; };
@@ -317,6 +323,8 @@
 				E4ADBB1C0E88174200B570BC /* CHRedBlackTree.m */,
 				E41180250E91E7E700E66053 /* CHSinglyLinkedList.h */,
 				E41180260E91E7E700E66053 /* CHSinglyLinkedList.m */,
+				BD78B1F11905F22200D06060 /* CHSizeLimitedTreap.h */,
+				BD78B1F21905F22200D06060 /* CHSizeLimitedTreap.m */,
 				E4558DB40FE7599500CC5860 /* CHSortedDictionary.h */,
 				E4558DB50FE7599500CC5860 /* CHSortedDictionary.m */,
 				E41035260EC409B900C2CFB9 /* CHTreap.h */,
@@ -418,6 +426,7 @@
 				E4399AB510A33D9500209906 /* CHUnbalancedTree.h in Headers */,
 				E4399AB710A33D9700209906 /* CHSortedSet.h in Headers */,
 				E4399AB810A33D9900209906 /* CHTreap.h in Headers */,
+				BD78B1F31905F22200D06060 /* CHSizeLimitedTreap.h in Headers */,
 				E4399ABA10A33D9B00209906 /* CHSortedDictionary.h in Headers */,
 				E4399ABB10A33D9C00209906 /* CHSinglyLinkedList.h in Headers */,
 				E4399AC010A33DA900209906 /* CHStack.h in Headers */,
@@ -532,6 +541,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD78B1F61905F22200D06060 /* CHSizeLimitedTreap.m in Sources */,
 				5DFBC20010A74A1F007BF56F /* iOSUnitTestingApp.m in Sources */,
 				5DFBC1FF10A74A1F007BF56F /* iOSUnitTestingAppDelegate.m in Sources */,
 			);
@@ -550,6 +560,7 @@
 				5DFBC2C810A7540A007BF56F /* CHQueueTest.m in Sources */,
 				5DFBC2CA10A7540A007BF56F /* CHSortedSetTest.m in Sources */,
 				5DFBC2CB10A7540A007BF56F /* CHStackTest.m in Sources */,
+				BD78B1F51905F22200D06060 /* CHSizeLimitedTreap.m in Sources */,
 				5DFBC2CE10A7540A007BF56F /* UtilTest.m in Sources */,
 				E45AD4AE111D4BE700AE0D25 /* CHCircularBufferTest.m in Sources */,
 			);
@@ -574,6 +585,7 @@
 				E4399A8510A33D6300209906 /* CHCircularBufferQueue.m in Sources */,
 				E4399A8710A33D6400209906 /* CHCircularBufferStack.m in Sources */,
 				E4399A9410A33D7500209906 /* CHListStack.m in Sources */,
+				BD78B1F41905F22200D06060 /* CHSizeLimitedTreap.m in Sources */,
 				E4399A9A10A33D8200209906 /* CHRedBlackTree.m in Sources */,
 				E4399A9D10A33D8300209906 /* CHOrderedSet.m in Sources */,
 				E4399A9F10A33D8400209906 /* CHOrderedDictionary.m in Sources */,
