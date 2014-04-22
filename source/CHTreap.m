@@ -64,9 +64,10 @@
 			if (current->priority >= current->link[direction]->priority)
 				break;
 			NSAssert(parent != nil, @"Illegal state, parent should never be nil!");
+            CHBinaryTreeStack_PUSH(parent);
+            CHBinaryTreeNode *nextParent = current->link[direction];
 			singleRotation(current, !direction, parent);
-			parent = current;
-			current = current->link[!direction];
+			parent = nextParent;
 		}
 	} else {
 		current = CHCreateBinaryTreeNodeWithObject(anObject);
@@ -85,7 +86,7 @@
 		// Rotate current node up, push parent down to opposite subtree.
 		direction = (parent->left == current);
 		NSAssert(parent != nil, @"Illegal state, parent should never be nil!");
-		NSAssert(stackSize > 0, @"Illegal state, stack should never be empty!");
+		NSAssert(stackSize > 0, @"Illegal state, stack should never be empty!");\
 		singleRotation(parent, direction, CHBinaryTreeStack_TOP);
 		parent = CHBinaryTreeStack_POP();
 	}
