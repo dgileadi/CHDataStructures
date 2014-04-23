@@ -1160,19 +1160,19 @@ static NSArray *abcde;
 
 - (void) testAddSameObject {
 	[set addObject:@"H" withPriority:10];
-    [set addObject:@"Z" withPriority:9];
-    [set addObject:@"Q" withPriority:8];
-    [set addObject:@"P" withPriority:7];
-    [set addObject:@"R" withPriority:6];
-    
-    [set addObject:@"Q" withPriority:4];
-    
-    STAssertEquals([set count], 5u, nil);
-    NSUInteger count = 0;
-    e = [set objectEnumerator];
-    while (e.nextObject)
-        count++;
-    STAssertEquals(count, 5u, nil);
+	[set addObject:@"Z" withPriority:9];
+	[set addObject:@"Q" withPriority:8];
+	[set addObject:@"P" withPriority:7];
+	[set addObject:@"R" withPriority:6];
+	
+	[set addObject:@"Q" withPriority:4];
+	
+	STAssertEquals([set count], 5u, nil);
+	NSUInteger count = 0;
+	e = [set objectEnumerator];
+	while (e.nextObject)
+		count++;
+	STAssertEquals(count, 5u, nil);
 }
 
 - (void) testAddObjectWithPriority {
